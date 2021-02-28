@@ -2,12 +2,11 @@ import React from 'react';
 import './search-panel.css';
 import ItemStatusFilter from './item-status-filter';
 
-const SearchPanel = ({getSearchValue}) => {
+const FilterPanel = ({getSearchValue}) => {
     return (
         <div className={'top-filter-panel'}>
-            <input onChange={getSearchValue} placeholder={'search'}/>
-            <ItemStatusFilter/>
+            <input onChange={()=>{}} placeholder={'search'}/>
         </div>
     )
 };
-export default SearchPanel
+export default FilterPanel

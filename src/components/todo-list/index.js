@@ -1,28 +1,30 @@
-import React from 'react';
-import TodoListItem from '../todo-list-item';
-import './todo-list.css';
+import React, {useEffect} from 'react';
+import TodoListItem from './todo-list-item';
+import {allTodoListSelector} from '../../state-menagment/selectors/todos'
+import {apiActions} from '../../state-menagment/actions';
+import {useDispatch, useSelector} from 'react-redux';
 
-const TodoList = ({todoData,deleteItem,toggleImportant,toggleDone}) => {
-    const Elements = todoData.map((item) => {
-    const {id, ...itemProps} = item;
-        return (
-            <li key={id} className={'list-group-item'}>
-                <TodoListItem {...itemProps}
-                              toggleImportant={()=>toggleImportant(id)}
-                              toggleDone={()=>toggleDone(id)}
-                              deleteItem={deleteItem}
-                              id={id}
-                />
-            </li>
-        )
-    });
+const TodoList = () => {
+    const dispatch = useDispatch();
+    const {data: todos, isLoading} = useSelector((state) => allTodoListSelector(state));
+    useEffect(() => {
+        dispatch(apiActions.getAllTodo)
+    }, [dispatch]);
 
-    return (
-        <ul className="list-group todo-list">
-            {Elements}
+    return !isLoading &&  (
+        <ul>
+            {
+                todos.map((item) => (
+                    <TodoListItem
+                        key={item['_id']}
+                        title={item['title']}
+                        description={item['description']}
+                        color = {item['color']}
+                        id={item['_id']}
+                    />
+                ))
+            }
         </ul>
     )
 };
 export default TodoList
-{/*<TodoListItem label={item.label} important={item.important}/>
-{/* {...item } nshanakuma itemic  vercra  hat hat elementner@  yev  poxancicomponenti  propsin */}

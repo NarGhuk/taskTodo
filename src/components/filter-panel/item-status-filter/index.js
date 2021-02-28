@@ -14,7 +14,7 @@ const ItemStatusFilter = ({getFilterValue,filterName}) => {
                       return(
                           <button type="button"
                                   className={` btn ${filterName === name? 'btn-info':'btn-outline-secondary' } `}
-                                  onClick={()=>getFilterValue(name)}
+                                  onClick={()=>{}}
                                   key={name}
                           >{label}</button>
                       )

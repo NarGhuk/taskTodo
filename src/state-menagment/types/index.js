@@ -1,0 +1,13 @@
+export const COMON_TYPES = {
+    DONE: 'DONE',
+    REJECTED: 'REJECTED',
+    PENDING: 'PENDING'
+};
+export const types = {
+    FETCH_ALL_TODO: 'FETCH_ALL_TODO',
+    FETCH_TODO_ID: 'FETCH_TODO_ID',
+    SET_TODO: 'SET_TODO',
+    EDIT_TODO: 'EDIT_TODO',
+    REMOVE_TODO:'REMOVE_TODO',
+    CANCEL_FETCH: 'CANCEL_FETCH',
+};

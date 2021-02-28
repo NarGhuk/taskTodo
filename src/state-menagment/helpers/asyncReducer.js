@@ -1,13 +1,12 @@
-import {COMON_TYPES} from '../comonTypes'
+import {COMON_TYPES} from '../types';
 
-const createAsyncReducer = (prefix, initialState) => (state = { isLoading: true, data: initialState }, action) => {
-    const { type } = action;
-    switch ( type ) {
+const createAsyncReducer = (prefix, initialState) => (state = {isLoading: true, data: initialState}, action) => {
+    const {type} = action;
+    switch (type) {
         case `${prefix}_${COMON_TYPES.PENDING}`:
-            return { data: state.data, isLoading: true, error: null, };
+            return {data: state.data, isLoading: true, error: null};
 
         case `${prefix}_${COMON_TYPES.DONE}`:
-
             return {
                 ...state,
                 data: action.payload || initialState,
