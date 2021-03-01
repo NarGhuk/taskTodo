@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiBase = 'https://todo.eachbase.com/api/NarekGhukasyan/todos';
+const apiBase = 'https://todo.eachbase.com/api/NarekGhukasyan/todos/';
 
 export async function getAllTodo() {
     const response = await axios.get(`${apiBase}`);
