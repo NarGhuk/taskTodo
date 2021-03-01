@@ -1,6 +1,6 @@
 import {types, COMON_TYPES} from '../types';
 import {getAllTodo, addTodo, remove, update} from '../../service/http-api.service';
-import {changeUpdateState, pushNewTodo, removeStateItem} from './helper';
+import {updateState, pushNewTodo, removeStateItem} from './helper';
 import {allTodoListSelector} from '../selectors/todos';
 
 export const apiActions = {
@@ -47,7 +47,7 @@ export const apiActions = {
                 const response = await update(id, bodyData);
                 dispatch({
                     type: `${types.FETCH_ALL_TODO}_${COMON_TYPES.DONE}`,
-                    payload: changeUpdateState(allTodoListSelector, response.data, getState)
+                    payload: updateState(allTodoListSelector, response.data, getState)
                 });
 
             } catch (err) {

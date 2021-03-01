@@ -6,8 +6,10 @@ import {useContextData} from '../../context';
 const FilterPanel = ({}) => {
     const { setSearchedCardsName} = useContextData();
     return (
-        <div className={'top-filter-panel'}>
-            <input onChange={(e)=>setSearchedCardsName(e)} placeholder={'search'}/>
+        <div className={'top-filter-panel input-field col s6'}>
+            <i className="material-icons prefix">search</i>
+            <input id="icon_search"  className="validate" type={'text'} onChange={(e)=>setSearchedCardsName(e)} />
+            <label htmlFor="icon_search">search Name</label>
         </div>
     )
 };

@@ -1,4 +1,4 @@
-export const changeUpdateState = (todoList, response, getState) => {
+export const updateState = (todoList, response, getState) => {
     const {data: prevState} = todoList(getState());
     return prevState.map(item => {
         if (item._id === response._id) {

@@ -8,7 +8,6 @@ export async function getAllTodo() {
 }
 export async function addTodo(sendData) {
     const response = await axios.post(`${apiBase}`,sendData);
-    console.log('axsios setTodo',response.data);
     return response.data
 }
 export async function update(prefixId,bodyData) {
