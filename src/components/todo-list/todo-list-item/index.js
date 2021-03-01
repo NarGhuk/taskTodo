@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,memo} from 'react';
 import {useDispatch} from 'react-redux';
 import {apiActions} from '../../../state-menagment/actions';
 
@@ -15,7 +15,6 @@ const TodoListItem = ({
     const [important, setImportant] = useState(false);
     const dispatch = useDispatch();
     const cls = ['todo', 'list-group-item'];
-
     if (completed) {
         cls.push('completed')
     }
@@ -43,7 +42,7 @@ const TodoListItem = ({
                     setCompleted(prevState => !prevState)
                 }}
             />
-            <span className={important && 'important'}>{description}</span>
+            <span className={important ? 'important' :''}>{description}</span>
         </div>
     );
     const updateTodoField = (
@@ -52,7 +51,7 @@ const TodoListItem = ({
             <input onChange={(e) => setTitleState(e.target.value)} value={titleState} type="text"/>
             <span>description </span>
             <input onChange={(e) => setDescState(e.target.value)} value={descState} type="text"/>
-            <button className={' btn-small'} onClick={handleUpdate(id)}>Save</button>
+            <button disabled={false} className={' btn-small'} onClick={handleUpdate(id)}>Save</button>
         </div>
     );
     return (
@@ -85,4 +84,4 @@ const TodoListItem = ({
     )
 };
 
-export default TodoListItem;
+export default memo(TodoListItem);

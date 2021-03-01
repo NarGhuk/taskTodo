@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import todoList from  './todosList';
-import deleteTodo from  './delete';
+import deleteTodo from  './removeReducer';
 import editTodo from  './edit';
 
 export default combineReducers({

@@ -8,11 +8,11 @@ export const useContextData = () => {
 
 export const AppProvider = ({children}) => {
     const [searchName, setSearchName] = useState('');
-    const setSearchedCardsName = (e) => setSearchName(e.target.value);
+    const setSearchTodoName= (e) => setSearchName(e.target.value);
 
     return (
         <AppContext.Provider value={{
-            setSearchedCardsName,
+            setSearchTodoName,
             searchName
         }}>{children}
         </AppContext.Provider>

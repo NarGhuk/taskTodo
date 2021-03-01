@@ -10,11 +10,7 @@ export const updateState = (todoList, response, getState) => {
 
 export const removeStateItem = (todoList, id, getState) => {
     const {data: prevState} = todoList(getState());
-    return prevState.filter(item => {
-        if (item._id !== id) {
-            return item;
-        }
-    });
+    return prevState.filter(item => item._id !== id);
 };
 
 export const pushNewTodo = (todoList, getState, newTodo) => {

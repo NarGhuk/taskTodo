@@ -49,6 +49,10 @@ export const apiActions = {
                     type: `${types.FETCH_ALL_TODO}_${COMON_TYPES.DONE}`,
                     payload: updateState(allTodoListSelector, response.data, getState)
                 });
+                // dispatch({
+                //     type: `${types.EDIT_TODO}_${COMON_TYPES.DONE}`,
+                //     payload:response
+                // });
 
             } catch (err) {
                 dispatch({
