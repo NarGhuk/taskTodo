@@ -1,11 +1,13 @@
 import React from 'react';
 import './search-panel.css';
-import ItemStatusFilter from './item-status-filter';
+import {useContextData} from '../../context';
 
-const FilterPanel = ({getSearchValue}) => {
+
+const FilterPanel = ({}) => {
+    const { setSearchedCardsName} = useContextData();
     return (
         <div className={'top-filter-panel'}>
-            <input onChange={()=>{}} placeholder={'search'}/>
+            <input onChange={(e)=>setSearchedCardsName(e)} placeholder={'search'}/>
         </div>
     )
 };
