@@ -5,6 +5,7 @@ import {apiActions} from '../../state-menagment/actions';
 import {useDispatch, useSelector} from 'react-redux';
 import Loader from '../loader'
 import {useContextData} from '../../context';
+import ErrorIndicator from '../error-indicator';
 
 
 const TodoList = () => {
@@ -19,7 +20,7 @@ const TodoList = () => {
     }, [dispatch]);
 
     if (error) {
-        return <h2>Error</h2>
+        return <ErrorIndicator/>
     }
     return isLoading ? <Loader/> : (
         <ul>

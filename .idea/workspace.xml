@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="542c2654-60ad-47cd-b5bc-3bea038c0a44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/state-menagment/reducers/removeReducer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/death-star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/error-indicator/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/filter-panel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter-panel/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/todo-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo-list/todo-list-item/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-list/todo-list-item/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state-menagment/actions/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-menagment/actions/helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state-menagment/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-menagment/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state-menagment/helpers/asyncReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-menagment/helpers/asyncReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state-menagment/reducers/delete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state-menagment/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-menagment/reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state-menagment/selectors/todos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-menagment/selectors/todos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/http-api.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/http-api.service.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,10 +53,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/todo-list/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="420">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,16 +71,42 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/todo-list/todo-list-item/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state relative-caret-position="-697">
+              <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/error-indicator/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/service/http-api.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/loader/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -118,11 +137,11 @@
       <find>contentInf</find>
       <find>setSearchedCardsName</find>
       <find>isEditing</find>
-      <find>useSelector</find>
       <find>className</find>
       <find>editTodoSelector</find>
       <find>conso</find>
       <find>setTitleState</find>
+      <find>useSelector</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Learn\task-todo\src\state-menagment</dir>
@@ -149,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/components/todo-list/todo-list-item/todo-list-item.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/service/http-api.service.js" />
         <option value="$PROJECT_DIR$/src/state-menagment/reducers/delete.js" />
         <option value="$PROJECT_DIR$/src/state-menagment/reducers/removeReducer/index.js" />
         <option value="$PROJECT_DIR$/src/state-menagment/reducers/rootReducer.js" />
@@ -160,16 +178,17 @@
         <option value="$PROJECT_DIR$/src/components/filter-panel/index.js" />
         <option value="$PROJECT_DIR$/src/state-menagment/actions/helper.js" />
         <option value="$PROJECT_DIR$/src/state-menagment/actions/index.js" />
-        <option value="$PROJECT_DIR$/src/components/todo-list/index.js" />
         <option value="$PROJECT_DIR$/src/components/todo-list/todo-list-item/index.js" />
+        <option value="$PROJECT_DIR$/src/components/todo-list/index.js" />
+        <option value="$PROJECT_DIR$/src/service/http-api.service.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2137" />
+    <option name="y" value="202" />
+    <option name="width" value="1364" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -192,14 +211,13 @@
               <item name="task-todo" type="b2602c69:ProjectViewProjectNode" />
               <item name="task-todo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="state-menagment" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task-todo" type="b2602c69:ProjectViewProjectNode" />
               <item name="task-todo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="state-menagment" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,8 +245,8 @@
       <recent name="C:\Learn\task-todo\src\components\todo-list" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Learn\task-todo\src" />
       <recent name="C:\Learn\task-todo\src\components" />
+      <recent name="C:\Learn\task-todo\src" />
       <recent name="C:\Learn\task-todo\src\state-menagment\helpers" />
       <recent name="C:\Learn\task-todo\src\state-menagment" />
       <recent name="C:\Learn\task-todo\src\components\header" />
@@ -256,24 +274,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614178026480</updated>
-      <workItem from="1614178027728" duration="101824000" />
+      <workItem from="1614178027728" duration="104245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101824000" />
+    <option name="totallyTimeSpent" value="104245000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11959958" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11959958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.22777778" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.22777778" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
@@ -432,20 +450,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/loader/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/http-api.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -517,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/state-menagment/helpers/asyncReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="78" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/state-menagment/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -541,23 +542,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/todo-list/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/todo-list/todo-list-item/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="-697">
+          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/todo-list/todo-list-item/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/loader/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/todo-list/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state relative-caret-position="420">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/state-menagment/helpers/asyncReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="78" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/error-indicator/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/http-api.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
         </state>
       </provider>
     </entry>
